@@ -1,0 +1,48 @@
+.navbar-brand a, .navbar-brand:hover a, .navbar-brand:visited a, .navbar-brand:link a, .navbar-brand:active a {
+  text-decoration: none;
+}
+
+.answers {
+  margin-bottom: 20px;
+}
+
+.answer {
+  position: relative;
+  padding: 10px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  margin: 10px;
+
+  .answer-info {
+    position: relative;
+    float: right;
+    right: 5px;
+    bottom: 5px;
+
+    .timestamp {
+      display: inline-block;
+
+    }
+
+    .author {
+      display: inline-block;
+    }
+  }
+}
+
+.answer:hover {
+  background-color: rgb(224, 237, 245);
+}
+
+
+.edit-question {
+  text-align: center;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  margin: 20px;
+  padding: 15px;
+
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}

@@ -6,6 +6,9 @@ export default Ember.Route.extend({
       questions: this.store.findAll('question').then(function(questions) {
         return questions.sortBy('timestamp');
       }),
+      answers: this.store.findAll('answer').then(function(answers) {
+        return answers.sortBy('timestamp');
+      }),
     })
   },
 

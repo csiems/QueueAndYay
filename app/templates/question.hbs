@@ -1,6 +1,20 @@
-<h2>More info about {{model.author}}'s question</h2>
+{{question-detail question=model destroyQuestion="destroyQuestion"}}
+{{new-answer saveAnswer="saveAnswer" question=model}}
 
-{{question-detail question=model}}
 
-{{update-question question=model update="update"}}
-<button {{action 'delete' question}}>Delete</button>
+
+<div class="answers">
+  {{#each model.answers as |answer|}}
+      {{answer-display answer=answer}}
+  {{/each}}
+</div>
+
+<div class="row">
+  <div class="col-sm-4 col-centered">
+    <div class="edit-question">
+      <h3>Edit Question:</h3>
+      {{update-question question=model update="update"}}
+      <button {{action 'delete' model}}>Delete</button>
+    </div>
+  </div>
+</div>
