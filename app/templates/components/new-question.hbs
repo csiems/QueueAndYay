@@ -3,16 +3,16 @@
     <div>
       <form>
         <div class="form-group">
-          <label for="content">Your Question</label>
-          {{input value=content id="content" required="true"}}
-        </div>
-        <div class="form-group">
           <label for="author">Your Name</label>
           {{input value=author id="author" required="true"}}
         </div>
         <div class="form-group">
+          <label for="content">Your Question</label>
+          {{input class="long-form" value=content id="content" required="true"}}
+        </div>
+        <div class="form-group">
           <label for="notes">Explanatory Notes (optional)</label>
-          {{input value=notes id="notes"}}
+          {{input class="long-form" value=notes id="notes"}}
         </div>
         <button {{action 'save'}}>Save</button>
       </form>
